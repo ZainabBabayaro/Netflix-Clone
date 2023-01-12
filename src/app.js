@@ -15,16 +15,16 @@ fetchRes.then(res =>
     res.json()).then(d => {
 
         let movieT = d.Search
-        
-             for (let i = 0; i < movieT.length; i++) {
-                 movieContainer.innerHTML += `<div class="w-60 h-80  bg-slate-200 ml-10  mb-10 rounded ">
+
+        for (let i = 0; i < movieT.length; i++) {
+            movieContainer.innerHTML += `<div class="w-60 h-80  bg-slate-200 ml-10  mb-10 rounded ">
                  <div class=" movie-title  h-9  text-black text-center">${movieT[i].Title} </div>
                  <img src="${movieT[i].Poster}" alt="ant-man" class="w-60 h-60">
                  <div class=" h-9 text-black text-center">${movieT[i].Year}</div>
                  </div>`
-             }
+        }
     })
-  
+
 
 
 
