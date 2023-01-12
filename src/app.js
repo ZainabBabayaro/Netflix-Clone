@@ -7,7 +7,7 @@ const movieTitle = document.querySelector(".movie-title")
 
 // API for get requests
 let fetchRes = fetch(
-    "http://www.omdbapi.com/?i=tt3896198&apikey=613f0b2b&s=super&page=1");
+    "https://www.omdbapi.com/?i=tt3896198&apikey=613f0b2b&s=super&page=1");
 // fetchRes is the promise to resolve
 // it by using.then() method
 
