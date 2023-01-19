@@ -2,7 +2,7 @@ const movieContainer = document.querySelector(".movie-container")
 
 let pageCounter = 1
 
-let display = "love"
+let display = "fun"
 // API for get requests
 const fetchMovies = (pageNum, display) => {
     movieContainer.innerHTML = ""
