@@ -55,7 +55,8 @@ let searchButton = document.getElementById('search-button')
 function search() {
 
     fetchMovies(movieT)
-    if (!(searchInput < movieT.length)) {
+
+    if (!(movieT.includes(searchInput))) {
         console.log('Not Found')
     } else {
 
